@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Document</title>
+</head>
+
+<style>
+  body {
+    width: 500px;
+  }
+  .pelangi{
+    box-shadow: 0 0 0 15px red,
+                0 0 0 30px orange,
+                0 0 0 50px yellow,
+                0 0 0 70px green,
+                0 0 0 90px blue,
+                0 0 0 110px purple;
+  }
+  .rainbow-animation{
+    animation: rainbow 0.6s linear;
+    animation-iteration-count: infinite;
+  }
+  @keyframes rainbow{
+    100%, 0%{
+      box-shadow: 0 0 0 15px red,
+                0 0 0 30px orange,
+                0 0 0 50px yellow,
+                0 0 0 70px green,
+                0 0 0 90px blue,
+                0 0 0 110px purple;
+    }
+    16%{
+      box-shadow: 0 0 0 15px purple,
+                0 0 0 30px red,
+                0 0 0 50px orange,
+                0 0 0 70px yellow,
+                0 0 0 90px green,
+                0 0 0 110px blue;
+    }
+    32%{
+      box-shadow: 0 0 0 15px blue,
+                0 0 0 30px purple,
+                0 0 0 50px red,
+                0 0 0 70px orange,
+                0 0 0 90px yellow,
+                0 0 0 110px green;
+    }
+    48%{
+      box-shadow: 0 0 0 15px green,
+                0 0 0 30px blue,
+                0 0 0 50px purple,
+                0 0 0 70px red,
+                0 0 0 90px orange,
+                0 0 0 110px yellow;
+    }
+    64%{
+      box-shadow: 0 0 0 15px yellow,
+                0 0 0 30px green,
+                0 0 0 50px blue,
+                0 0 0 70px purple,
+                0 0 0 90px red,
+                0 0 0 110px orange;
+    }
+    80%{
+      box-shadow: 0 0 0 15px orange,
+                0 0 0 30px yellow,
+                0 0 0 50px green,
+                0 0 0 70px blue,
+                0 0 0 90px purple,
+                0 0 0 110px red;
+    }
+  }
+  /* buat CSS di disini */
+</style>
+
+<body>
+  <div class="pelangi rainbow-animation"></div>
+</body>
+
+<script>
+  // buat script disini
+  
+</script>
+
+</html>
